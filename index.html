@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/c1d7b63443.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="./assets/image/fav-icon.svg">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <div class="parent">
+
+        <!-- Nav Bar -->
+         
+        <div class="navigation">
+            <a href="#home">
+                <img src="./assets/image/logo-svg.svg" class="logo-svg" alt="image">
+            </a>
+            <ul class="nav-menu resp-nav-menu">
+                <li class="nav-contents"><a href="#home" class="nav-list nav-list-home">Home</a></li>
+                <li class="nav-contents"><a href="#about" class="nav-list">About</a></li>
+                <li class="nav-contents"><a href="#services" class="nav-list">Services</a></li>
+                <li class="nav-contents"><a href="#project" class="nav-list">Projects</a></li>
+                <li class="nav-contents"><a href="#contact" class="nav-list">Contact</a></li>
+                <div class="dark-light">
+                    <div class="dark-mode">
+                        <span class="dark-light-text">Dark</span>
+                    </div>
+                </div>
+            </ul>
+        </div>
+
+        <!-- Landing Screen -->
+
+        <div class="hero resp-hero">
+            <div class="background">
+                <img src="./assets/image/background.png" alt="image">
+            </div>
+            <!-- <p class="role-text-hidden  resp-role">Designer / Developer</p> -->
+            <div class="role  resp-role">
+                <p class="role-text">Designer / Developer</p>
+            </div>
+            <div class="name-container resp-name-container">
+                <div class="hello-content resp-hello-content">
+                    <div class="hello-line"></div>
+                    <p class="hello-word">Hello</p>
+                </div>
+                <p class="intro-name">I'm Thamaraiselvan</p>
+                <p class="intro-role">UX/UI Designer and Frontend Developer</p>
+                <a href="./assets/file/Resume.pdf" download="Resume.pdf" target="_blank" type="button"><button
+                        class="resume-button">Download CV
+                        <img src="./assets/image/stash--cloud-arrow-down.svg" alt="image">
+                    </button>
+                </a>
+                <p class="mail resp-name">thamarais676@gmail.com</p>
+                <p class="phone-number">+91 8754241820</p>
+            </div>
+
+            <div class="profile-img-container resp-profile-img-container">
+                <img src="./assets/image/lotus-img.svg" class="profile-image resp-profile" alt="image">
+            </div>
+
+            <div class="socialmedia-logos resp-socialmedia-logos">
+                <p class="follow-text resp-follow-text">Follow Me</p>
+                <a href="https://www.linkedin.com/in/thamaraiselvan-b-b7aba1337/" target="_blank"><img
+                        src="./assets/image/linkedin.svg" alt="image"></a>
+                <a href="https://www.behance.net/thamaraiselvan28" target="_blank"><img src="./assets/image/behance.svg"
+                        alt="image"></a>
+                <a href="#"><img src="./assets/image/github.svg" alt="image"></a>
+            </div>
+
+            <!-- scroll arrow -->
+
+            <div class="up-btn">
+                <a class="scroll-top" href="#top" aria-label="Back to top">
+                    <span class="scroll-top__icon">↑</span>
+                </a>
+            </div>
+
+            <script>
+                const update = () => {
+                    const p = window.scrollY / (document.body.scrollHeight - innerHeight);
+                    document.documentElement.style.setProperty('--progress', p);
+                };
+                update();                 // initial
+                addEventListener('scroll', update, { passive: true });
+            </script>
+
+        </div>
+
+        <!-- About -->
+
+        <div class="about-section" id="about">
+            <div class="about-container">
+                <p class="about-text">About Me</p>
+            </div>
+            <div class="about-content resp-about-content">
+
+                <p class="about-slogan">
+                    I’m a UX/UI designer and frontend developer with a passion for creating thoughtful,
+                    user-centered digital experiences. I combine design thinking with clean, responsive code to
+                    bring
+                    interfaces to life—building products that are both visually engaging and functionally seamless.
+                </p>
+                <p class="about-slogan">
+                    With a strong foundation in UX research, visual design, and modern web technologies, I handle
+                    everything from wireframes and high-fidelity UI to fully responsive frontend development. Whether
+                    it's a landing page, a web app, or a full product design system, I focus on clarity, usability, and
+                    performance.
+                </p>
+
+                <p class="about-slogan about-slogan-three">I love turning complex ideas into elegant, easy-to-use
+                    interfaces—and making sure they work beautifully across all devices.</p>
+            </div>
+
+            <div class="about-contact">
+
+                <div class="mail-contain">
+                    <a href="#"><img class="email" src="./assets/image/Group 15.svg" alt="image"></a>
+                    <a href="#" class="about-svg">&emsp;thamarais676@gmail.com</a>
+                </div>
+
+                <div class="mail-contain">
+                    <a href="#"><img src="./assets/image/Group 14.svg" alt="image"></a>
+                    <a href="#" class="about-svg">&emsp;+91 8754241820</a>
+                </div>
+
+                <div class="mail-contain resp-location">
+                    <a href="#"><img src="./assets/image/Group 13.svg" alt="image"></a>
+                    <a href="#" class="about-svg">&emsp;Coimbatore</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- services -->
+
+        <div class="what-i-do" id="services">
+            <div class="about-container">
+                <p class="about-text">Services</p>
+            </div>
+            <div class="services">
+                <div class="web">
+                    <p class="s-no">01</p>
+                    <img class="globe" src="./assets/image/streamline-plump_web.svg" alt="image">
+                    <p class="role-title">UX Experience Design</p>
+                    <p class="service-role-des role-ux">Designing digital products people actually enjoy using.</p>
+                    <a class="readmore-arrow" href="#"><img src="./assets/image/arrow.svg" alt="image"></a>
+                </div>
+                <div class="web">
+                    <p class="s-no">02</p>
+                    <img class="globe" src="./assets/image/streamline-plump_web.svg" alt="image">
+                    <p class="role-title">User Interface Design</p>
+                    <p class="role-des role-ui">Designing clean, modern interfaces that feel effortless.</p>
+                    <a class="readmore-arrow" href="#"><img src="./assets/image/arrow.svg" alt="image"></a>
+                </div>
+                <div class="web">
+                    <p class="s-no">03</p>
+                    <img class="globe" src="./assets/image/streamline-plump_web.svg" alt="image">
+                    <p class="role-title">Frontend Development</p>
+                    <p class="role-des role-des-front">From design to deployment—I bring interfaces to life.</p>
+                    <a class="readmore-arrow" href="#"><img src="./assets/image/arrow.svg" alt="image"></a>
+                </div>
+                <div class="web">
+                    <p class="s-no">04</p>
+                    <img class="globe" src="./assets/image/streamline-plump_web.svg" alt="image">
+                    <p class="role-title">Full Product Design + <br> Frontend</p>
+                    <p class="role-des role-des-full">From UX strategy to frontend implementation.</p>
+                    <a class="readmore-arrow" href="#"><img src="./assets/image/arrow.svg" alt="image"></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects -->
+
+        <div class="project resp-project" id="project">
+            <div class="about-container resp-about-container">
+                <p class="about-text">Projects</p>
+            </div>
+            <div class="project-container resp-project-container">
+                <div class="first-line-project-contain  resp-first-sub-contain">
+                    <div class="first-sub-contain">
+                        <div class="dashboard-projects-contain">
+                            <img class="dashboard-img" src="./assets/image/dashboard.png" alt="image">
+                        </div>
+                        <div class="dashboard-nav">
+                            <div class="dash-text">
+                                <p class="role-title dash-nav">AlgoVest UX / UI Case Study</p>
+                                <p class="role-des dash-nav-des">Dashboard For Stock Exchange</p>
+                            </div>
+                            <a class="des-nav-icon" href="https://www.behance.net/thamaraiselvan28"><img
+                                    src="./assets/image/arrow.svg" alt="image"></a>
+                        </div>
+                    </div>
+                    <div class="second-sub-contain resp-first-sub-contain">
+                        <div class="dashboard-projects-contain">
+                            <img class="dashboard-img" src="./assets/image/website.png" alt="image">
+                        </div>
+                        <div class="dashboard-nav">
+                            <div class="dash-text">
+                                <p class="role-title dash-nav">Web Design</p>
+                                <p class="role-des dash-nav-des">Gopro Product Website</p>
+                            </div>
+                            <a class="des-nav-icon" href="https://www.behance.net/thamaraiselvan28"><img
+                                    src="./assets/image/arrow.svg" alt="image"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="first-line-project-contain  resp-first-sub-contain">
+                    <div class="first-sub-contain">
+                        <div class="dashboard-projects-contain">
+                            <img class="dashboard-img" src="./assets/image/dashboard.png" alt="image">
+                        </div>
+                        <div class="dashboard-nav">
+                            <div class="dash-text">
+                                <p class="role-title dash-nav">Chronicle UX / UI Case Study</p>
+                                <p class="role-des dash-nav-des">App For Event Management</p>
+                            </div>
+                            <a class="des-nav-icon" href="https://www.behance.net/thamaraiselvan28"><img
+                                    src="./assets/image/arrow.svg" alt="image"></a>
+                        </div>
+                    </div>
+                    <div class="second-sub-contain resp-first-sub-contain">
+                        <div class="dashboard-projects-contain">
+                            <img class="dashboard-img" src="./assets/image/website.png" alt="image">
+                        </div>
+                        <div class="dashboard-nav">
+                            <div class="dash-text">
+                                <p class="role-title dash-nav">AlgoVest UX / UI Case Study</p>
+                                <p class="role-des dash-nav-des">Dashboard For Stock Exchange</p>
+                            </div>
+                            <a class="des-nav-icon" href="https://www.behance.net/thamaraiselvan28"><img
+                                    src="./assets/image/arrow.svg" alt="image"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Resume -->
+
+        <div class="resume">
+            <div class="about-container">
+                <p class="about-text">Education & Experience</p>
+            </div>
+            <div class="education-experience-contain resp-education-experience-contain">
+                <div class="education">
+                    <p class="education-title">Education</p>
+                    <div class="ug">
+                        <p class="ug-title">Bachelor of Computer Applications</p>
+                        <p class="university-name">Bharadhidasan University</p>
+                        <p class="ug-year university-name">2024 - Present</p>
+                    </div>
+                    <div class="diploma">
+                        <p class="ug-title">Diploma in Electrical Communication <br> Engineering</p>
+                        <p class="university-name">Govt Polytechnic Collage - Karur</p>
+                        <p class="ug-year university-name">2015 - 2017</p>
+                    </div>
+                    <div class="diploma">
+                        <p class="ug-title">HSC</p>
+                        <p class="university-name">Govt Hr.Sec School - Karur</p>
+                        <p class="ug-year university-name">2014 - 2015</p>
+                    </div>
+                    <div class="dot"></div>
+                    <div class="second-dot"></div>
+                    <div class="third-dot"></div>
+                </div>
+
+                <div class="experience education">
+                    <p class="education-title">Experience</p>
+                    <div class="ug">
+                        <p class="ug-title">Ux/Ui Internship in Magnil Technology</p>
+                        <p class="university-name">Chennai</p>
+                        <p class="ug-year university-name">2024 - Present</p>
+                    </div>
+                    <div class="diploma">
+                        <p class="ug-title">Designer <br>Printing Media</p>
+                        <p class="university-name">DD Printers - Karur</p>
+                        <p class="ug-year university-name">2020 - 2024</p>
+                    </div>
+                    <div class="diploma">
+                        <p class="ug-title">Bharat Heavy Electrical Limited</p>
+                        <p class="university-name">Trainee</p>
+                        <p class="ug-year university-name">2018 - 2019</p>
+                    </div>
+                    <div class="dot"></div>
+                    <div class="second-dot"></div>
+                    <div class="third-dot"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills -->
+
+        <div class="skills">
+            <div class="about-container">
+                <p class="about-text">Skills</p>
+            </div>
+            <p class="skills-title">Design Skills - Development Skills</p>
+            <div class="skill-content-box">
+                <div class="design-skill-contain">
+                    <div class="design-img-contain">
+                        <img src="./assets/image/pen.svg" alt="image">
+                        <p class="ug-title">Ux / Ui Design</p>
+                    </div>
+                    <br>
+                    <div class="skills-content">
+                        <div class="design-list-contain">
+                            <div class="trainee">
+                                <img src="./assets/image/fe_arrow-right.svg" alt="image">
+                                <p class="university-name">User Flow</p>
+                            </div>
+
+                            <div class="trainee">
+                                <img src="./assets/image/fe_arrow-right.svg" alt="image">
+                                <p class="university-name">Wire framing</p>
+                            </div>
+
+                            <div class="trainee">
+                                <img src="./assets/image/fe_arrow-right.svg" alt="image">
+                                <p class="university-name">Prototyping</p>
+                            </div>
+
+                            <div class="trainee">
+                                <img src="./assets/image/fe_arrow-right.svg" alt="image">
+                                <p class="university-name">Interaction Design (IxD)</p>
+                            </div>
+                        </div>
+
+                        <div class="design-list-contain  design-list-contain-two">
+                            <div class="trainee">
+                                <img src="./assets/image/fe_arrow-right.svg" alt="image">
+                                <p class="university-name">Design Systems</p>
+                            </div>
+                            <div class="trainee">
+                                <img src="./assets/image/fe_arrow-right.svg" alt="image">
+                                <p class="university-name">Visual Design</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="design-skill-contain">
+                    <div class="design-img-contain">
+                        <img src="./assets/image/dev.svg" alt="image">
+                        <p class="ug-title">Development</p>
+                    </div>
+                    <br>
+                    <div class="skills-content">
+                        <div class="design-list-contain">
+                            <div class="trainee">
+                                <img src="./assets/image/fe_arrow-right.svg" alt="image">
+                                <p class="university-name">HTML5</p>
+                            </div>
+                            <div class="trainee">
+                                <img src="./assets/image/fe_arrow-right.svg" alt="image">
+                                <p class="university-name">CSS3</p>
+                            </div>
+                            <div class="trainee">
+                                <img src="./assets/image/fe_arrow-right.svg" alt="image">
+                                <p class="university-name">JavaScript</p>
+                            </div>
+                            <div class="trainee">
+                                <img src="./assets/image/fe_arrow-right.svg" alt="image">
+                                <p class="university-name">Bootstrap</p>
+                            </div>
+                        </div>
+                        <div class="design-list-contain design-list-contain-two">
+                            <div class="trainee">
+                                <img src="./assets/image/fe_arrow-right.svg" alt="image">
+                                <p class="university-name">WordPress</p>
+                            </div>
+                            <div class="trainee">
+                                <img src="./assets/image/fe_arrow-right.svg" alt="image">
+                                <p class="university-name">React</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel Section -->
+
+        <div class="carousel">
+            <p class="carousel-title">My Experts Areas Where I Gained Skill</p>
+            <div class="carousel-icons">
+                <div class="figma">
+                    <img class="figma-svh" src="./assets/image/figma-logo.svg" alt="icon">
+                    <p class="s-no carousel-icon-name">Figma</p>
+                </div>
+                <div class="figma">
+                    <img class="figma-svh" src="./assets/image/skill-icons_illustrator.svg" alt="icon">
+                    <p class="s-no carousel-icon-name">Illustrator</p>
+                </div>
+                <div class="figma">
+                    <img class="figma-svh" src="./assets/image/Balsamiq.svg" alt="icon">
+                    <p class="s-no carousel-icon-name">Balsamiq</p>
+                </div>
+                <div class="figma">
+                    <img class="figma-svh" src="./assets/image/skill-icons_html.svg" alt="icon">
+                    <p class="s-no carousel-icon-name">HTML</p>
+                </div>
+                <div class="figma">
+                    <img class="figma-svh" src="./assets/image/css.svg" alt="icon">
+                    <p class="s-no carousel-icon-name">CSS</p>
+                </div>
+                <div class="figma">
+                    <img class="figma-svh" src="./assets/image/javascript.svg" alt="icon">
+                    <p class="s-no carousel-icon-name">JavaScript</p>
+                </div>
+
+                <div class="figma">
+                    <img class="figma-svh" src="./assets/image/skill-icons_illustrator.svg" alt="icon">
+                    <p class="s-no carousel-icon-name">Illustrator</p>
+                </div>
+                <div class="figma">
+                    <img class="figma-svh" src="./assets/image/Balsamiq.svg" alt="icon">
+                    <p class="s-no carousel-icon-name">Balsamiq</p>
+                </div>
+                <div class="figma">
+                    <img class="figma-svh" src="./assets/image/css.svg" alt="icon">
+                    <p class="s-no carousel-icon-name">CSS</p>
+                </div>
+                <div class="figma">
+                    <img class="figma-svh" src="./assets/image/javascript.svg" alt="icon">
+                    <p class="s-no carousel-icon-name">JavaScript</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hire Me -->
+
+        <div class="hire-contain-box" id="hire">
+            <div class="hire-contain-box-properties">
+                <img class="hire-img resp-hire-img" src="./assets/image/hireme-img.jpg" alt="image">
+                <div class="empty-box resp-empty-box"></div>
+                <div class="hireme-button-contain">
+                    <p class="hire-intro-text">Interested in working with me?</p>
+                    <a href="#hire"><button type="button" class="hire-button">Hire Me!</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- contact -->
+
+        <div class="footer-contact" id="contact">
+            <div class="about-container">
+                <p class="about-text">Contact</p>
+            </div>
+            <div class="contact-first-contain resp-contact-first-contain">
+                <div class="contact-container">
+                    <p class="contact-title">Let's get in touch</p>
+                    <p class="contact-title-content">I enjoy discussing new projects and design challenges. <br>
+                        Please share as much info, as possible so we can get <br>
+                        the most out of our first catch-up.</p>
+
+                    <p class="contact-title">Living In:</p>
+                    <p class="contact-title-content">Coimbatore, Tamilnadu.</p>
+
+                    <p class="contact-title">Contact:</p>
+                    <p class="contact-title-content">+91 8754241820</p>
+                    <div class="cont-icon">
+                        <a href="#" class="twitter"><img src="./assets/image/mdi_twitter.svg" alt="icon"><span
+                                class="twitter-span">Twitter</span></a>
+                        <a href="https://www.linkedin.com/in/thamaraiselvan-b-b7aba1337/" target="_blank"
+                            class="linkedin"><img class="icons-social"
+                                src="./assets/image/entypo-social_linkedin-with-circle.svg" alt="icon"><span
+                                class="linkedin-span">Linkedin</span></a>
+                        <!-- <img src="./assets/image/eva_behance-fill.svg" alt="icon"> -->
+                        <a href="#" class="insta"><img class="icons-social" src="./assets/image/mdi_instagram.svg"
+                                alt="icon"><span class="insta-span">Instagram</span></a>
+                        <a href="#" class="face"><img class="icons-social" src="./assets/image/ic_outline-facebook.svg"
+                                alt="icon"><span class="face-span">Facebook</span></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <p class="contact-title">Get in Touch:</p>
+                    <form action="text">
+                        <p class="contact-title-content">Name:</p>
+                        <input class="form-input" type="text">
+                        <p class="contact-title-content">Email:</p>
+                        <input class="form-input" type="text">
+                        <p class="contact-title-content">Your Message:</p>
+                        <input class="form-input form-message" type="text">
+                    </form>
+                    <button type="submit" class="form-button">Send</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- copyright -->
+
+        <div class="footer-nav-item">
+            <ul class="footer-nav">
+                <li class="footer-nav-contents"><a href="#home" class="footer-nav-list">Home</a></li>
+                <li class="footer-nav-contents"><a href="#about" class="footer-nav-list">About</a></li>
+                <li class="footer-nav-contents"><a href="#services" class="footer-nav-list">Services</a></li>
+                <li class="footer-nav-contents"><a href="#project" class="footer-nav-list">Projects</a></li>
+                <li class="footer-nav-contents"><a href="#contact" class="footer-nav-list">Contact</a></li>
+            </ul>
+            <div class="footer-copyright-container">
+                <p class="footer-copyright">Copyright © 2024 | All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
